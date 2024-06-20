@@ -17,10 +17,3 @@ MacID: [siddim78]
 
 Student No.: [400372881]
 
-Group Member 2 Information:
-
-Name: [Insert your full name here in format: Last name, First name]
-
-MacID: [Insert your macID here]
-
-Student No.: [Insert your numerical 9-digit McMaster student number here]
