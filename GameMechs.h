@@ -22,24 +22,48 @@ class GameMechs
     private:
         char input;
         bool exitFlag;
-        
+
         int boardSizeX;
         int boardSizeY;
+
+        bool loseFlag;      // flag to determine if the player has lost
+        int score;          // players score
+        int playerX;        // players X pos on the board
+        int playerY;        // players Y pos on the board
+        objPos foodPos;     // pos of the food on the board
 
     public:
         GameMechs();
         GameMechs(int boardX, int boardY);
+        ~GameMechs();
         
         bool getExitFlagStatus();
         void setExitTrue();
 
+        bool getLoseFlagStatus() const; 
+        void setLoseFlag();
+
         char getInput();
-        void setInput(char this_input);
+        void setInput(char thisInput);
         void clearInput();
 
         int getBoardSizeX();
         int getBoardSizeY();
-      
+
+        int getScore();
+        void incrementScore();
+
+        void generateFood(objPos blockOff);
+        void getFoodPos(objPos &returnPos);
+
+        int getPlayerX();              // returns the current X pos of player
+        int getPlayerY();              // returns the current Y pos of player
+        void movePlayerUp();
+        void movePlayerDown();
+        void movePlayerLeft();
+        void movePlayerRight();
+
+
 
 };
 

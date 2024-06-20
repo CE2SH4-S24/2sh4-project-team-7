@@ -16,15 +16,15 @@ class objPosArrayList
         objPosArrayList();
         ~objPosArrayList();
 
-        void insertHead(objPos thisPos);
-        void insertTail(objPos thisPos);
+        int getSize() const;
+        void insertHead(const objPos& thisPos);
+        void insertTail(const objPos& thisPos);
         void removeHead();
         void removeTail();
-        
-        int getSize();
-        void getHeadElement(objPos &returnPos);
-        void getTailElement(objPos &returnPos);
-        void getElement(objPos &returnPos, int index);
+
+        void getHeadElement(objPos& returnPos) const;
+        void getTailElement(objPos& returnPos) const;
+        void getElement(objPos& returnPos, int index) const;
 };
 
 #endif

@@ -9,17 +9,16 @@ class objPos
         char symbol;
 
         objPos();
-        objPos(objPos &o); // copy constructor
+        objPos(const objPos& o); // copy constructor
         objPos(int xPos, int yPos, char sym);
 
-        void setObjPos(objPos o);        
-        void setObjPos(int xPos, int yPos, char sym);  
-        void getObjPos(objPos &returnPos);
-        char getSymbol();
+        void setObjPos(const objPos& o);
+        void setObjPos(int xPos, int yPos, char sym);
+        void getObjPos(objPos& returnPos) const;
+        char getSymbol() const;
 
-        bool isPosEqual(const objPos* refPos);
-        
-        char getSymbolIfPosEqual(const objPos* refPos);
+        bool isPosEqual(const objPos* refPos) const;
+        char getSymbolIfPosEqual(const objPos* refPos) const;
 };
 
 #endif
