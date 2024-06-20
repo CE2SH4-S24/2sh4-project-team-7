@@ -12,8 +12,3 @@ Group Number: [7]
 Group Member 1 Information:
 
 Name: [Siddiqui, Saad]
-
-MacID: [siddim78]
-
-Student No.: [400372881]
-
